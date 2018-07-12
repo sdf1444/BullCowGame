@@ -9,9 +9,8 @@ public:
 	bool IsGameWon();
 	bool CheckGuessValidity(std::string); // TODO make a more rich return value.
 
-
-										  // ^^ Please try and ignore this and focus on the interface above ^^
+// ^^ Please try and ignore this and focus on the interface above ^^
 private:
-	int MyCurrentTry;
-	int MyMaxTries;
+	int MyCurrentTry = 1;
+	int MyMaxTries = 5;
 };
