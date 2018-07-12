@@ -9,7 +9,7 @@ bool AskToPlayAgain();
 
 FBullCowGame BCGame; // instantiate a new game
 
-					 // the entry point for our application
+// the entry point for our application
 int main()
 {
 	bool bPlayAgain = false;
@@ -37,6 +37,7 @@ void PrintIntro()
 
 void PlayGame()
 {
+	BCGame.Reset();
 	int MaxTries = BCGame.GetMaxTries();
 
 	// loop for the number of turns asking for guesses
